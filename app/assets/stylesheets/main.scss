@@ -1,0 +1,28 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#box {
+  float: right;
+  height: 100%;
+  width: 50%;
+  border: 0px solid #000000;
+  border-left-width: 1px;
+}
+
+#party {
+  float: left;
+  height: 100%;
+  width: 50%;
+  border: 0px solid #000000;
+  border-right-width: 1px;
+}
+
+#pokelist{
+  float: left;
+  width: 30%;
+  height: 100%;
+  border: 0px solid transparent;
+  border-left-width: 3px;
+  border-top-width: 3px;
+}

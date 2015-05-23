@@ -1,0 +1,59 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  [num: 1
+  code: MyString
+  name: MyString
+  type1: MyString
+  type2: MyString
+  baseSpecies: MyString
+  forme: MyString
+  M: 1.5
+  F: 1.5
+  hp: 1
+  atk: 
+  def: MyString
+  spa: MyString
+  spd: MyString
+  spe: MyString
+  ability1: MyString
+  ability2: MyString
+  abilityH: MyString
+  heightm: MyString
+  weightkg: MyString
+  color: MyString
+  prevo: MyString
+  evos: MyString
+  eggGroup1: MyString
+  eggGroup2: MyString
+  evoLevel: MyString
+  ]: MyString
+
+two:
+  [num: 1
+  code: MyString
+  name: MyString
+  type1: MyString
+  type2: MyString
+  baseSpecies: MyString
+  forme: MyString
+  M: 1.5
+  F: 1.5
+  hp: 1
+  atk: 
+  def: MyString
+  spa: MyString
+  spd: MyString
+  spe: MyString
+  ability1: MyString
+  ability2: MyString
+  abilityH: MyString
+  heightm: MyString
+  weightkg: MyString
+  color: MyString
+  prevo: MyString
+  evos: MyString
+  eggGroup1: MyString
+  eggGroup2: MyString
+  evoLevel: MyString
+  ]: MyString

@@ -1,0 +1,29 @@
+<% if not user_signed_in? %>
+    <h1>Welcome to PokéLibrary!</h1>
+    Please, log in with your Facebook account to continue
+
+<% else %>
+
+
+    <div id="party">
+      <%= render('pokemon/createPokemon') %>
+    </div>
+    <div id="box">
+
+      <% Box.find_each do |box| %>
+          <li>
+            <a href="#"><%= box.name %></a>
+
+          </li>
+      <% end %>
+
+    </div>
+<% end %>
+
+<script>
+    var options = {
+        valueNames: [ 'name' ]
+    };
+
+    var userList = new List('pokemons', options);
+</script>

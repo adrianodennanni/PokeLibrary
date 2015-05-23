@@ -1,0 +1,286 @@
+id;code;name;spritenum;flingBasePower;gen;description
+1;absorbbulb;Absorb Bulb;2;30;5;Raises holder's Sp. Atk by 1 stage if hit by a Water-type attack. Single use.
+2;adamantorb;Adamant Orb;4;60;4;If holder is a Dialga, its Steel- and Dragon-type attacks have 1.2x power.
+3;aguavberry;Aguav Berry;5;;3;Restores 1/8 max HP when at 1/2 max HP or less. May confuse. Single use.
+4;airballoon;Air Balloon;6;10;5;Holder is immune to Ground-type attacks. Pops when holder is hit.
+5;apicotberry;Apicot Berry;10;;3;Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.
+6;armorfossil;Armor Fossil;12;100;4;Can be revived into Shieldon.
+7;aspearberry;Aspear Berry;13;;3;Holder is cured if it is frozen. Single use.
+8;babiriberry;Babiri Berry;17;;4;Halves damage taken from a supereffective Steel-type attack. Single use.
+9;belueberry;Belue Berry;21;;3;No competitive use.
+10;berryjuice;Berry Juice;22;30;2;Restores 20 HP when at 1/2 max HP or less. Single use.
+11;bigroot;Big Root;29;10;4;Holder gains 1.3x HP from draining moves, Aqua Ring, Ingrain, and Leech Seed.
+12;bindingband;Binding Band;31;30;5;Holder's partial-trapping moves deal 1/6 max HP per turn instead of 1/8.
+13;blackbelt;Black Belt;32;30;2;Holder's Fighting-type attacks have 1.2x power.
+14;blacksludge;Black Sludge;34;30;4;"Each turn, if holder is a Poison type, restores 1/16 max HP; loses 1/8 if not."
+15;blackglasses;Black Glasses;35;30;2;Holder's Dark-type attacks have 1.2x power.
+16;blueorb;Blue Orb;41;;6;If holder is a Kyogre, this item triggers its Primal Reversion in battle.
+17;blukberry;Bluk Berry;44;;3;No competitive use.
+18;brightpowder;BrightPowder;51;10;2;The accuracy of attacks against the holder is 0.9x.
+19;buggem;Bug Gem;53;;5;Holder's first successful Bug-type attack will have 1.3x power. Single use.
+20;burndrive;Burn Drive;54;;5;Holder's Techno Blast is Fire type.
+21;cellbattery;Cell Battery;60;30;5;Raises holder's Attack by 1 if hit by an Electric-type attack. Single use.
+22;charcoal;Charcoal;61;30;2;Holder's Fire-type attacks have 1.2x power.
+23;chartiberry;Charti Berry;62;;4;Halves damage taken from a supereffective Rock-type attack. Single use.
+24;cheriberry;Cheri Berry;63;;3;Holder cures itself if it is paralyzed. Single use.
+25;cherishball;Cherish Ball;64;;4;A rare Poke Ball that has been crafted to commemorate an occasion.
+26;chestoberry;Chesto Berry;65;;3;Holder wakes up if it is asleep. Single use.
+27;chilanberry;Chilan Berry;66;;4;Halves damage taken from a Normal-type attack. Single use.
+28;chilldrive;Chill Drive;67;;5;Holder's Techno Blast is Ice type.
+29;choiceband;Choice Band;68;10;3;Holder's Attack is 1.5x, but it can only select the first move it executes.
+30;choicescarf;Choice Scarf;69;10;4;Holder's Speed is 1.5x, but it can only select the first move it executes.
+31;choicespecs;Choice Specs;70;10;4;Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.
+32;chopleberry;Chople Berry;71;;4;Halves damage taken from a supereffective Fighting-type attack. Single use.
+33;clawfossil;Claw Fossil;72;100;3;Can be revived into Anorith.
+34;cobaberry;Coba Berry;76;;4;Halves damage taken from a supereffective Flying-type attack. Single use.
+35;colburberry;Colbur Berry;78;;4;Halves damage taken from a supereffective Dark-type attack. Single use.
+36;cornnberry;Cornn Berry;81;;3;No competitive use.
+37;coverfossil;Cover Fossil;85;100;5;Can be revived into Tirtouga.
+38;custapberry;Custap Berry;86;;4;Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.
+39;damprock;Damp Rock;88;60;4;Holder's use of Rain Dance lasts 8 turns instead of 5.
+40;darkgem;Dark Gem;89;;5;Holder's first successful Dark-type attack will have 1.3x power. Single use.
+41;deepseascale;DeepSeaScale;93;30;3;If holder is a Clamperl, its Sp. Def is doubled.
+42;deepseatooth;DeepSeaTooth;94;90;3;If holder is a Clamperl, its Sp. Atk is doubled.
+43;destinyknot;Destiny Knot;95;10;4;If holder becomes infatuated, the other Pokemon also becomes infatuated.
+44;diveball;Dive Ball;101;;3;A Poke Ball that works especially well on Pokemon that live underwater.
+45;domefossil;Dome Fossil;102;100;3;Can be revived into Kabuto.
+46;dousedrive;Douse Drive;103;;5;Holder's Techno Blast is Water type.
+47;dracoplate;Draco Plate;105;;4;Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.
+48;dragonfang;Dragon Fang;106;70;2;Holder's Dragon-type attacks have 1.2x power.
+49;dragongem;Dragon Gem;107;;5;Holder's first successful Dragon-type attack will have 1.3x power. Single use.
+50;dreadplate;Dread Plate;110;;4;Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.
+51;dreamball;Dream Ball;111;;5;A special Poke Ball that appears out of nowhere in a bag at the Entree Forest.
+52;durinberry;Durin Berry;114;;3;No competitive use.
+53;duskball;Dusk Ball;115;;4;A Poke Ball that makes it easier to catch wild Pokemon at night or in caves.
+54;earthplate;Earth Plate;117;;4;Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.
+55;ejectbutton;Eject Button;118;30;5;If holder is hit, it immediately switches out with a chosen ally. Single use.
+56;electirizer;Electirizer;119;80;4;Evolves Electabuzz into Electivire when traded.
+57;electricgem;Electric Gem;120;;5;Holder's first successful Electric-type attack will have 1.3x power. Single use.
+58;energypowder;EnergyPowder;123;30;2;Restores 50 HP to one Pokemon but lowers Happiness.
+59;enigmaberry;Enigma Berry;124;;3;Restores 1/4 max HP after holder is hit by a supereffective move. Single use.
+60;eviolite;Eviolite;130;40;5;If holder's species can evolve, its Defense and Sp. Def are 1.5x.
+61;expertbelt;Expert Belt;132;10;4;Holder's attacks that are super effective against the target do 1.2x damage.
+62;fastball;Fast Ball;137;;2;A Poke Ball that makes it easier to catch Pokemon which are quick to run away.
+63;fightinggem;Fighting Gem;139;;5;Holder's first successful Fighting-type attack will have 1.3x power. Single use.
+64;figyberry;Figy Berry;140;;3;Restores 1/8 max HP when at 1/2 max HP or less. May confuse. Single use.
+65;firegem;Fire Gem;141;;5;Holder's first successful Fire-type attack will have 1.3x power. Single use.
+66;fistplate;Fist Plate;143;;4;Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.
+67;flameorb;Flame Orb;145;30;4;At the end of every turn, this item attempts to burn the holder.
+68;flameplate;Flame Plate;146;;4;Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.
+69;floatstone;Float Stone;147;30;5;Holder's weight is halved.
+70;flyinggem;Flying Gem;149;;5;Holder's first successful Flying-type attack will have 1.3x power. Single use.
+71;focusband;Focus Band;150;10;2;Holder has a 10% chance to survive an attack that would KO it with 1 HP.
+72;focussash;Focus Sash;151;10;4;If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use.
+73;friendball;Friend Ball;153;;2;A Poke Ball that makes caught Pokemon more friendly.
+74;fullincense;Full Incense;155;10;4;Holder moves last in its priority bracket.
+75;ganlonberry;Ganlon Berry;158;;3;Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.
+76;ghostgem;Ghost Gem;161;;5;Holder's first successful Ghost-type attack will have 1.3x power. Single use.
+77;grassgem;Grass Gem;172;;5;Holder's first successful Grass-type attack will have 1.3x power. Single use.
+78;greatball;Great Ball;174;;1;A high-performance Ball that provides a higher catch rate than a Poke Ball.
+79;grepaberry;Grepa Berry;178;;3;No competitive use.
+80;gripclaw;Grip Claw;179;90;4;Holder's partial-trapping moves always last 7 turns.
+81;griseousorb;Griseous Orb;180;60;4;If holder is a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.
+82;groundgem;Ground Gem;182;;5;Holder's first successful Ground-type attack will have 1.3x power. Single use.
+83;habanberry;Haban Berry;185;;4;Halves damage taken from a supereffective Dragon-type attack. Single use.
+84;hardstone;Hard Stone;187;100;2;Holder's Rock-type attacks have 1.2x power.
+85;healball;Heal Ball;188;;4;A remedial Poke Ball that restores the caught Pokemon's HP and status problem.
+86;heatrock;Heat Rock;193;60;4;Holder's use of Sunny Day lasts 8 turns instead of 5.
+87;heavyball;Heavy Ball;194;;2;A Poke Ball for catching very heavy Pokemon.
+88;helixfossil;Helix Fossil;195;100;3;Can be revived into Omanyte.
+89;hondewberry;Hondew Berry;213;;3;No competitive use.
+90;iapapaberry;Iapapa Berry;217;;3;Restores 1/8 max HP when at 1/2 max HP or less. May confuse. Single use.
+91;icegem;Ice Gem;218;;5;Holder's first successful Ice-type attack will have 1.3x power. Single use.
+92;icicleplate;Icicle Plate;220;;4;Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.
+93;icyrock;Icy Rock;221;40;4;Holder's use of Hail lasts 8 turns instead of 5.
+94;insectplate;Insect Plate;223;;4;Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.
+95;ironball;Iron Ball;224;130;4;Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage.
+96;ironplate;Iron Plate;225;;4;Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.
+97;jabocaberry;Jaboca Berry;230;;4;If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.
+98;kasibberry;Kasib Berry;233;;4;Halves damage taken from a supereffective Ghost-type attack. Single use.
+99;kebiaberry;Kebia Berry;234;;4;Halves damage taken from a supereffective Poison-type attack. Single use.
+100;kelpsyberry;Kelpsy Berry;235;;3;No competitive use.
+101;kingsrock;King's Rock;236;30;2;Holder's attacks without a chance to flinch gain a 10% chance to flinch.
+102;laggingtail;Lagging Tail;237;10;4;Holder moves last in its priority bracket.
+103;lansatberry;Lansat Berry;238;;3;Holder gains the Focus Energy effect when at 1/4 max HP or less. Single use.
+104;laxincense;Lax Incense;240;10;3;The accuracy of attacks against the holder is 0.9x.
+105;leftovers;Leftovers;242;10;2;At the end of every turn, holder restores 1/16 of its max HP.
+106;leppaberry;Leppa Berry;244;;3;Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use.
+107;levelball;Level Ball;246;;2;A Poke Ball for catching Pokemon that are a lower level than your own.
+108;liechiberry;Liechi Berry;248;;3;Raises holder's Attack by 1 stage when at 1/4 max HP or less. Single use.
+109;lifeorb;Life Orb;249;30;4;Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.
+110;lightball;Light Ball;251;30;2;If holder is a Pikachu, its Attack and Sp. Atk are doubled.
+111;lightclay;Light Clay;252;30;4;Holder's use of Light Screen or Reflect lasts 8 turns instead of 5.
+112;loveball;Love Ball;258;;2;Poke Ball for catching Pokemon that are the opposite gender of your Pokemon.
+113;luckypunch;Lucky Punch;261;40;2;If holder is a Chansey, its critical hit ratio is raised by 2 stages.
+114;lumberry;Lum Berry;262;;3;Holder cures itself if it is confused or has a major status condition. Single use.
+115;lureball;Lure Ball;264;;2;A Poke Ball for catching Pokemon hooked by a Rod when fishing.
+116;lustrousorb;Lustrous Orb;265;60;4;If holder is a Palkia, its Water- and Dragon-type attacks have 1.2x power.
+117;luxuryball;Luxury Ball;266;;3;A comfortable Poke Ball that makes a caught wild Pokemon quickly grow friendly.
+118;machobrace;Macho Brace;269;60;3;Holder's Speed is halved.
+119;magnet;Magnet;273;30;2;Holder's Electric-type attacks have 1.2x power.
+120;magoberry;Mago Berry;274;;3;Restores 1/8 max HP when at 1/2 max HP or less. May confuse. Single use.
+121;magostberry;Magost Berry;275;;3;No competitive use.
+122;masterball;Master Ball;276;;1;The best Ball with the ultimate performance. It will catch any wild Pokemon.
+123;meadowplate;Meadow Plate;282;;4;Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.
+124;mentalherb;Mental Herb;285;10;3;Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use.
+125;metalcoat;Metal Coat;286;30;2;Holder's Steel-type attacks have 1.2x power.
+126;metalpowder;Metal Powder;287;10;2;If holder is a Ditto that hasn't Transformed, its Defense is doubled.
+127;metronome;Metronome;289;30;4;Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.
+128;micleberry;Micle Berry;290;;4;Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.
+129;mindplate;Mind Plate;291;;4;Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.
+130;miracleseed;Miracle Seed;292;30;2;Holder's Grass-type attacks have 1.2x power.
+131;moonball;Moon Ball;294;;2;A Poke Ball for catching Pokemon that evolve using the Moon Stone.
+132;muscleband;Muscle Band;297;10;4;Holder's physical attacks have 1.1x power.
+133;mysticwater;Mystic Water;300;30;2;Holder's Water-type attacks have 1.2x power.
+134;nanabberry;Nanab Berry;302;;3;No competitive use.
+135;nestball;Nest Ball;303;;3;A Poke Ball that works especially well on weaker Pokemon in the wild.
+136;netball;Net Ball;304;;3;A Poke Ball that works especially well on Water- and Bug-type Pokemon.
+137;nevermeltice;Never-Melt Ice;305;30;2;Holder's Ice-type attacks have 1.2x power.
+138;nomelberry;Nomel Berry;306;;3;No competitive use.
+139;normalgem;Normal Gem;307;;5;Holder's first successful Normal-type attack will have 1.3x power. Single use.
+140;occaberry;Occa Berry;311;;4;Halves damage taken from a supereffective Fire-type attack. Single use.
+141;oddincense;Odd Incense;312;10;4;Holder's Psychic-type attacks have 1.2x power.
+142;oldamber;Old Amber;314;100;3;Can be revived into Aerodactyl.
+143;oranberry;Oran Berry;319;;3;Restores 10 HP when at 1/2 max HP or less. Single use.
+144;pamtreberry;Pamtre Berry;323;;3;No competitive use.
+145;parkball;Park Ball;325;;2;A special Poke Ball for the Pal Park.
+146;passhoberry;Passho Berry;329;;4;Halves damage taken from a supereffective Water-type attack. Single use.
+147;payapaberry;Payapa Berry;330;;4;Halves damage taken from a supereffective Psychic-type attack. Single use.
+148;pechaberry;Pecha Berry;333;;3;Holder is cured if it is poisoned. Single use.
+149;persimberry;Persim Berry;334;;3;Holder is cured if it is confused. Single use.
+150;petayaberry;Petaya Berry;335;;3;Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.
+151;pinapberry;Pinap Berry;337;;3;No competitive use.
+152;plumefossil;Plume Fossil;339;100;5;Can be revived into Archen.
+153;poisonbarb;Poison Barb;343;70;2;Holder's Poison-type attacks have 1.2x power.
+154;poisongem;Poison Gem;344;;5;Holder's first successful Poison-type attack will have 1.3x power. Single use.
+155;pokeball;Poke Ball;345;;1;A device for catching wild Pokemon. It is designed as a capsule system.
+156;pomegberry;Pomeg Berry;351;;3;No competitive use.
+157;powerherb;Power Herb;358;10;4;Holder's two-turn moves complete in one turn (except Sky Drop). Single use.
+158;premierball;Premier Ball;363;;3;A rare Poke Ball that has been crafted to commemorate an event.
+159;psychicgem;Psychic Gem;369;;5;Holder's first successful Psychic-type attack will have 1.3x power. Single use.
+160;qualotberry;Qualot Berry;371;;3;No competitive use.
+161;quickball;Quick Ball;372;;4;A Poke Ball that provides a better catch rate at the start of a wild encounter.
+162;quickclaw;Quick Claw;373;80;2;Each turn, holder has a 20% chance to move first in its priority bracket.
+163;quickpowder;Quick Powder;374;10;4;If holder is a Ditto that hasn't Transformed, its Speed is doubled.
+164;rabutaberry;Rabuta Berry;375;;3;No competitive use.
+165;rarebone;Rare Bone;379;100;4;No competitive use.
+166;rawstberry;Rawst Berry;381;;3;Holder is cured if it is burned. Single use.
+167;razorclaw;Razor Claw;382;80;4;Holder's critical hit ratio is raised by 1 stage.
+168;razorfang;Razor Fang;383;30;4;Holder's attacks without a chance to flinch gain a 10% chance to flinch.
+169;razzberry;Razz Berry;384;;3;No competitive use.
+170;redcard;Red Card;387;10;5;If holder is hit, it forces the attacker to switch to a random ally. Single use.
+171;redorb;Red Orb;390;;6;If holder is a Groudon, this item triggers its Primal Reversion in battle.
+172;repeatball;Repeat Ball;401;;3;A Poke Ball that works well on Pokemon species that were previously caught.
+173;mail;Mail;403;;2;This item cannot be given to or taken from a Pokemon, except by Knock Off.
+174;rindoberry;Rindo Berry;409;;4;Halves damage taken from a supereffective Grass-type attack. Single use.
+175;ringtarget;Ring Target;410;10;5;The holder's type immunities granted solely by its typing are negated.
+176;rockgem;Rock Gem;415;;5;Holder's first successful Rock-type attack will have 1.3x power. Single use.
+177;rockincense;Rock Incense;416;10;4;Holder's Rock-type attacks have 1.2x power.
+178;rockyhelmet;Rocky Helmet;417;60;5;If holder is hit by a contact move, the attacker loses 1/6 of its max HP.
+179;rootfossil;Root Fossil;418;100;3;Can be revived into Lileep.
+180;roseincense;Rose Incense;419;10;4;Holder's Grass-type attacks have 1.2x power.
+181;rowapberry;Rowap Berry;420;;4;If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.
+182;safariball;Safari Ball;425;;1;A special Poke Ball that is used only in the Safari Zone and Great Marsh.
+183;salacberry;Salac Berry;426;;3;Raises holder's Speed by 1 stage when at 1/4 max HP or less. Single use.
+184;scopelens;Scope Lens;429;30;2;Holder's critical hit ratio is raised by 1 stage.
+185;seaincense;Sea Incense;430;10;3;Holder's Water-type attacks have 1.2x power.
+186;sharpbeak;Sharp Beak;436;50;2;Holder's Flying-type attacks have 1.2x power.
+187;shedshell;Shed Shell;437;10;4;Holder may switch out even when trapped by another Pokemon, or by Ingrain.
+188;shellbell;Shell Bell;438;30;3;After an attack, holder gains 1/8 of the damage in HP dealt to other Pokemon.
+189;shockdrive;Shock Drive;442;;5;Holder's Techno Blast is Electric type.
+190;shucaberry;Shuca Berry;443;;4;Halves damage taken from a supereffective Ground-type attack. Single use.
+191;silkscarf;Silk Scarf;444;10;3;Holder's Normal-type attacks have 1.2x power.
+192;silverpowder;SilverPowder;447;10;2;Holder's Bug-type attacks have 1.2x power.
+193;sitrusberry;Sitrus Berry;448;;3;Restores 1/4 max HP when at 1/2 max HP or less. Single use.
+194;skullfossil;Skull Fossil;449;100;4;Can be revived into Cranidos.
+195;skyplate;Sky Plate;450;;4;Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.
+196;smoothrock;Smooth Rock;453;10;4;Holder's use of Sandstorm lasts 8 turns instead of 5.
+197;softsand;Soft Sand;456;10;2;Holder's Ground-type attacks have 1.2x power.
+198;souldew;Soul Dew;459;30;3;If holder is a Latias or a Latios, its Sp. Atk and Sp. Def are 1.5x.
+199;spelltag;Spell Tag;461;30;2;Holder's Ghost-type attacks have 1.2x power.
+200;spelonberry;Spelon Berry;462;;3;No competitive use.
+201;splashplate;Splash Plate;463;;4;Holder's Water-type attacks have 1.2x power. Judgment is Water type.
+202;spookyplate;Spooky Plate;464;;4;Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.
+203;sportball;Sport Ball;465;;4;A special Poke Ball for the Bug-Catching Contest.
+204;starfberry;Starf Berry;472;;3;Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.
+205;steelgem;Steel Gem;473;;5;Holder's first successful Steel-type attack will have 1.3x power. Single use.
+206;stick;Stick;475;60;2;If holder is a Farfetch'd, its critical hit ratio is raised by 2 stages.
+207;stickybarb;Sticky Barb;476;80;4;Each turn, holder loses 1/8 max HP. An attacker making contact can receive it.
+208;stoneplate;Stone Plate;477;;4;Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.
+209;tamatoberry;Tamato Berry;486;;3;No competitive use.
+210;tangaberry;Tanga Berry;487;;4;Halves damage taken from a supereffective Bug-type attack. Single use.
+211;thickclub;Thick Club;491;90;2;If holder is a Cubone or a Marowak, its Attack is doubled.
+212;timerball;Timer Ball;494;;3;A Poke Ball that becomes better the more turns there are in a battle.
+213;toxicorb;Toxic Orb;515;30;4;At the end of every turn, this item attempts to badly poison the holder.
+214;toxicplate;Toxic Plate;516;;4;Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.
+215;twistedspoon;TwistedSpoon;520;30;2;Holder's Psychic-type attacks have 1.2x power.
+216;ultraball;Ultra Ball;521;;1;An ultra-performance Ball that provides a higher catch rate than a Great Ball.
+217;wacanberry;Wacan Berry;526;;4;Halves damage taken from a supereffective Electric-type attack. Single use.
+218;watergem;Water Gem;528;;5;Holder's first successful Water-type attack will have 1.3x power. Single use.
+219;watmelberry;Watmel Berry;530;;3;No competitive use.
+220;waveincense;Wave Incense;531;10;4;Holder's Water-type attacks have 1.2x power.
+221;wepearberry;Wepear Berry;533;;3;No competitive use.
+222;whiteherb;White Herb;535;;3;Restores all lowered stat stages to 0 when one is less than 0. Single use.
+223;widelens;Wide Lens;537;10;4;The accuracy of attacks by the holder is 1.1x.
+224;wikiberry;Wiki Berry;538;;3;Restores 1/8 max HP when at 1/2 max HP or less. May confuse. Single use.
+225;wiseglasses;Wise Glasses;539;10;4;Holder's special attacks have 1.1x power.
+226;yacheberry;Yache Berry;567;;4;Halves damage taken from a supereffective Ice-type attack. Single use.
+227;zapplate;Zap Plate;572;;4;Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.
+228;zoomlens;Zoom Lens;574;;4;The accuracy of attacks by the holder is 1.2x if it is the last to move in a turn.
+229;abomasite;Abomasite;575;;6;If holder is an Abomasnow, this item allows it to Mega Evolve in battle.
+230;absolite;Absolite;576;;6;If holder is an Absol, this item allows it to Mega Evolve in battle.
+231;aerodactylite;Aerodactylite;577;;6;If holder is an Aerodactyl, this item allows it to Mega Evolve in battle.
+232;aggronite;Aggronite;578;;6;If holder is an Aggron, this item allows it to Mega Evolve in battle.
+233;alakazite;Alakazite;579;;6;If holder is an Alakazam, this item allows it to Mega Evolve in battle.
+234;ampharosite;Ampharosite;580;;6;If holder is an Ampharos, this item allows it to Mega Evolve in battle.
+235;assaultvest;Assault Vest;581;80;6;Holder's Sp. Def is 1.5x, but it can only select damaging moves.
+236;banettite;Banettite;582;;6;If holder is a Banette, this item allows it to Mega Evolve in battle.
+237;blastoisinite;Blastoisinite;583;;6;If holder is a Blastoise, this item allows it to Mega Evolve in battle.
+238;blazikenite;Blazikenite;584;;6;If holder is a Blaziken, this item allows it to Mega Evolve in battle.
+239;charizarditex;Charizardite X;585;;6;If holder is a Charizard, this item allows it to Mega Evolve in battle.
+240;charizarditey;Charizardite Y;586;;6;If holder is a Charizard, this item allows it to Mega Evolve in battle.
+241;gardevoirite;Gardevoirite;587;;6;If holder is a Gardevoir, this item allows it to Mega Evolve in battle.
+242;gengarite;Gengarite;588;;6;If holder is a Gengar, this item allows it to Mega Evolve in battle.
+243;garchompite;Garchompite;589;;6;If holder is a Garchomp, this item allows it to Mega Evolve in battle.
+244;gyaradosite;Gyaradosite;589;;6;If holder is a Gyarados, this item allows it to Mega Evolve in battle.
+245;heracronite;Heracronite;590;;6;If holder is a Heracross, this item allows it to Mega Evolve in battle.
+246;houndoominite;Houndoominite;591;;6;If holder is a Houndoom, this item allows it to Mega Evolve in battle.
+247;kangaskhanite;Kangaskhanite;592;;6;If holder is a Kangaskhan, this item allows it to Mega Evolve in battle.
+248;keeberry;Kee Berry;593;;6;Raises holder's Defense by 1 stage if hit by a physical attack. Single use.
+249;lucarionite;Lucarionite;594;;6;If holder is a Lucario, this item allows it to Mega Evolve in battle.
+250;luminousmoss;Luminous Moss;595;30;6;Raises holder's Sp. Def by 1 stage if hit by a Water-type attack. Single use.
+251;manectite;Manectite;596;;6;If holder is a Manectric, this item allows it to Mega Evolve in battle.
+252;marangaberry;Maranga Berry;597;;6;Raises holder's Sp. Def by 1 stage if hit by a special attack. Single use.
+253;mawilite;Mawilite;598;;6;If holder is a Mawile, this item allows it to Mega Evolve in battle.
+254;medichamite;Medichamite;599;;6;If holder is a Medicham, this item allows it to Mega Evolve in battle.
+255;mewtwonitex;Mewtwonite X;600;;6;If holder is a Mewtwo, this item allows it to Mega Evolve in battle.
+256;mewtwonitey;Mewtwonite Y;601;;6;If holder is a Mewtwo, this item allows it to Mega Evolve in battle.
+257;pinsirite;Pinsirite;602;;6;If holder is a Pinsir, this item allows it to Mega Evolve in battle.
+258;roseliberry;Roseli Berry;603;;6;Halves damage taken from a supereffective Fairy-type attack. Single use.
+259;safetygoggles;Safety Goggles;604;80;6;Holder is immune to powder moves and damage from Sandstorm or Hail.
+260;scizorite;Scizorite;605;;6;If holder is a Scizor, this item allows it to Mega Evolve in battle.
+261;snowball;Snowball;606;30;6;Raises holder's Attack by 1 if hit by an Ice-type attack. Single use.
+262;tyranitarite;Tyranitarite;607;;6;If holder is a Tyranitar, this item allows it to Mega Evolve in battle.
+263;venusaurite;Venusaurite;608;;6;If holder is a Venusaur, this item allows it to Mega Evolve in battle.
+264;weaknesspolicy;Weakness Policy;609;80;6;If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.
+265;pixieplate;Pixie Plate;610;;6;Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type.
+266;fairygem;Fairy Gem;611;;6;Holder's first successful Fairy-type attack will have 1.3x power. Single use.
+267;swampertite;Swampertite;612;;6;If holder is a Swampert, this item allows it to Mega Evolve in battle.
+268;sceptilite;Sceptilite;613;;6;If holder is a Sceptile, this item allows it to Mega Evolve in battle.
+269;sablenite;Sablenite;614;;6;If holder is a Sableye, this item allows it to Mega Evolve in battle.
+270;altarianite;Altarianite;615;;6;If holder is an Altaria, this item allows it to Mega Evolve in battle.
+271;galladite;Galladite;616;;6;If holder is a Gallade, this item allows it to Mega Evolve in battle.
+272;audinite;Audinite;617;;6;If holder is an Audino, this item allows it to Mega Evolve in battle.
+273;metagrossite;Metagrossite;618;;6;If holder is a Metagross, this item allows it to Mega Evolve in battle.
+274;sharpedonite;Sharpedonite;619;;6;If holder is a Sharpedo, this item allows it to Mega Evolve in battle.
+275;slowbronite;Slowbronite;620;;6;If holder is a Slowbro, this item allows it to Mega Evolve in battle.
+276;steelixite;Steelixite;621;;6;If holder is a Steelix, this item allows it to Mega Evolve in battle.
+277;pidgeotite;Pidgeotite;622;;6;If holder is a Pidgeot, this item allows it to Mega Evolve in battle.
+278;glalitite;Glalitite;623;;6;If holder is a Glalie, this item allows it to Mega Evolve in battle.
+279;diancite;Diancite;624;;6;If holder is a Diancie, this item allows it to Mega Evolve in battle.
+280;cameruptite;Cameruptite;625;;6;If holder is a Camerupt, this item allows it to Mega Evolve in battle.
+281;lopunnite;Lopunnite;626;;6;If holder is a Lopunny, this item allows it to Mega Evolve in battle.
+282;salamencite;Salamencite;627;;6;If holder is a Salamence, this item allows it to Mega Evolve in battle.
+283;beedrillite;Beedrillite;628;;6;If holder is a Beedrill, this item allows it to Mega Evolve in battle.
+284;latiasite;Latiasite;629;;6;If holder is a Latias, this item allows it to Mega Evolve in battle.
+285;latiosite;Latiosite;630;;6;If holder is a Latios, this item allows it to Mega Evolve in battle.

@@ -1,0 +1,7 @@
+<div style="overflow: scroll; height: 100%; overflow-x: hidden;">
+
+    <% PokemonDefault.all.each do |p| %>
+        <%= image_tag 'pokemon/'+p.code+'.gif' %>
+    <% end %>
+
+</div>

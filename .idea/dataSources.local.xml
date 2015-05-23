@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails PokeLibrary: development" uuid="50fdd143-19d7-4845-bd4e-eb4125a8584d">
+      <user-name>rails</user-name>
+      <user-password>dfdadfc5dfc1dfcfdfc7dfc5dfc4</user-password>
+    </data-source>
+    <data-source name="Rails PokeLibrary: production" uuid="bfd246fc-2a24-44b1-8f3d-ec9ae57b8d25">
+      <user-name>PokeLibrary</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddffadfe5dfe1dfefdfe6dfe3dfe8dff8dfebdff8dff3dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>
