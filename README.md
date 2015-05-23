@@ -9,7 +9,7 @@ Using Rails  4.2.0
 
 ----------
 
-To run a instance of this Rails Project, you need to generate these files:
+To run a instance of this Rails Project, you need to generate/edit these files:
 
 ### - config/application.yml
 `Figaro` gem uses it to ensure the safety of your facebook keys. Run:
@@ -21,6 +21,7 @@ To run a instance of this Rails Project, you need to generate these files:
 
     facebook_app_id: "your-ap-id-here"
 	facebook_app_secret: "your-app-secret-here"
+	devise_secret_key: "put in here your devise secret key"
 
 ### - config/database.yml
 
@@ -54,21 +55,7 @@ You should add here the configuration to acess your database. Since I used Postg
 
 ### - config/secrets.yml
 
-Copied from Rails official website:
+1. Use `rake secrets' to generate your new keys and paste them to secrets.yml
 
-
-1. Create a secrets.yml file in your config folder with the following content:
-
-    development:
-      secret_key_base:
-
-    test:
-      secret_key_base:
-
-    production:
-      secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>
-
-3. Use `rake secrets' to generate your new keys and paste them to secrets.yml
-
-4. Restart your server.
+2. Restart your server.
 
