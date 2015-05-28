@@ -6,24 +6,20 @@
 
 
     <div id="party">
-      <%= render('pokemon/createPokemon') %>
+
     </div>
     <div id="box">
 
       <% Box.find_each do |box| %>
-          <li>
             <a href="#"><%= box.name %></a>
-
-          </li>
+      <% end %>
+      <br/>
+      <br/>
+      <% current_user.boxes.first.pokemons.all.each do |pkm| %>
+        <%= pkm.name %>
+          <br/>
       <% end %>
 
     </div>
 <% end %>
 
-<script>
-    var options = {
-        valueNames: [ 'name' ]
-    };
-
-    var userList = new List('pokemons', options);
-</script>

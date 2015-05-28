@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+
+  resources :pokemons
+
   resources :parties
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -59,4 +63,6 @@ Rails.application.routes.draw do
   root 'main#index'
   devise_for :users, :controllers => { :omniauth_callbacks => 'users/omniauth_callbacks' }
   get '/all', to: 'main#all'
+  resources :pokemon
+  resources :party
 end

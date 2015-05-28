@@ -51,13 +51,13 @@
 
         <% if user_signed_in? %>
             <li>
-                <%= link_to  parties_path, :remote => true do %>
+                <%= link_to  new_pokemon_path , :remote => true do %>
                     <i class="fa fa-fw fa-plus"></i> Create a new Pokémon
                 <% end %>
             </li>
 
             <li>
-              <%= link_to  parties_path, :remote => true do %>
+              <%= link_to  new_party_path, :remote => true do %>
                 <i class="fa fa-fw fa-plus"></i> Create new Party
               <% end %>
             </li>
