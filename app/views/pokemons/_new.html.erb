@@ -1,31 +1,27 @@
-<script>
-    var options = {
-        valueNames: [ 'name' ]
-    };
-
-    var userList = new List('pokemon_list', options);
-</script>
-
-<%= form_for @pokemon do |f| %>
+<%= form_for @pokemon, :remote => true do |f| %>
     Name:
     <%= f.text_field :name %>
     Box: <%= current_user.boxes.where(number: 1).first.number %>
+    <div id="pokemon_picture">
+        Picture: <%= image_tag 'pokemon/pichu.gif' %>
+    </div>
     <%= f.submit 'Create' %>
+    <div id="pokemon_list">
+      <input class="search form-control" placeholder="Search"/>
+      <ul class="list" style="list-style: none; padding:0; margin:0;">
+
+
+        <% PokemonDefault.where(forme: nil).each do |pkm| %>
+                <li>
+                  <%= f.radio_button :number, pkm.num , :onclick => 'render_picture();' %>
+                  <%= image_tag 'miniaturePokemon/'+pkm.code+'.png' %>
+                  <span class="name"><%= pkm.name %></span>
+                  <%= image_tag 'types/'+pkm.type1+'.png' %>
+                  <% if not pkm.type2.nil? %>
+                      <%= image_tag 'types/'+pkm.type2+'.png' %>
+                  <% end %>
+                </li>
+        <% end %>
+      </ul>
+    </div>
 <% end %>
-
-<div id="pokemon_list">
-  <input class="search form-control" placeholder="Search"/>
-  <ul class="list" style="list-style: none; padding:0; margin:0;">
-    <% PokemonDefault.where(forme: nil).each do |pkm| %>
-        <li>
-          <%= image_tag 'miniaturePokemon/'+pkm.code+'.png' %>
-          <span class="name"><%= pkm.name %></span>
-          <%= image_tag 'types/'+pkm.type1+'.png' %>
-          <% if not pkm.type2.nil? %>
-              <%= image_tag 'types/'+pkm.type2+'.png' %>
-          <% end %>
-        </li>
-    <% end %>
-  </ul>
-
-</div>

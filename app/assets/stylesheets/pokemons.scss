@@ -1,0 +1,11 @@
+// Place all the styles related to the pokemon controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#pokemon_list{
+  bottom: 0px;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  overflow-y: scroll;
+}

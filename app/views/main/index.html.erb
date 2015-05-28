@@ -16,8 +16,10 @@
       <br/>
       <br/>
       <% current_user.boxes.first.pokemons.all.each do |pkm| %>
-        <%= pkm.name %>
-          <br/>
+          <span title="<%= pkm.name %>">
+        <%= image_tag 'miniaturePokemon/'+PokemonDefault.where(forme: nil).find_by_num(pkm.number).code+'.png' %>
+          </span>
+
       <% end %>
 
     </div>
