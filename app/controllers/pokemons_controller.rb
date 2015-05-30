@@ -1,9 +1,8 @@
 class PokemonsController < ApplicationController
-
   def new
     @pokemon = Pokemon.new
     respond_to do |format|
-      format.html {render :new}
+      format.html {render :partial => 'new'}
       format.js {render :new}
     end
   end
@@ -31,6 +30,6 @@ class PokemonsController < ApplicationController
   private
 
     def pokemon_params
-      params.require(:pokemon).permit(:name, :number)
+      params.require(:pokemon).permit(:id, :name, :number)
     end
 end

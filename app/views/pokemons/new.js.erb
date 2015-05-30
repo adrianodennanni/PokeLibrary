@@ -1,9 +1,9 @@
 //Render 'new' partial at 'party' div
 $("#party").html("<%= escape_javascript(render 'new') %>")
 
-//Render 'picture' partial at 'pokemon_picture' div
-function render_picture() {
-    $('#pokemon_picture').html('<%=j render :partial => 'picture' %>')
+//Render pokemon picture
+function render_picture(code) {
+    $("#pokemon_picture").attr("src","/assets/pokemon/"+code+".gif");
 }
 
 //List.js

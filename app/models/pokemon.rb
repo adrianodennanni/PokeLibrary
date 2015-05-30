@@ -9,4 +9,8 @@ class Pokemon < ActiveRecord::Base
   belongs_to :user
   belongs_to :box
   belongs_to :party
+
+  validates :number, presence: true
+  validates :name, presence: true
+
 end
