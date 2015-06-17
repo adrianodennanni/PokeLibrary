@@ -19,6 +19,7 @@ class User < ActiveRecord::Base
     end
   end
 
+
   after_create do
     (1..4).each do |i|
       @box = Box.create(user_id: self.id, name: "Box #{i}", size:30,number: i)

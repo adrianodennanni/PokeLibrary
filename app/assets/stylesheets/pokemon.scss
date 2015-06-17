@@ -2,10 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#pokemon_list{
+.lista{
   bottom: 0px;
   height: 400px;
   width: 100%;
   position: absolute;
   overflow-y: scroll;
+  z-index: 2;
 }
+
+#sup_form{
+  bottom: 400px;
+  overflow-y: scroll;
+}
+

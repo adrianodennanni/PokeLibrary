@@ -10,10 +10,31 @@ class PokemonsController < ApplicationController
   def edit
   end
 
+
   def create
     @pokemon = Pokemon.new(pokemon_params)
-    @pokemon.box_id= current_user.boxes.where(number: 1).first.id
-    @pokemon.save
+
+    vacancy = false
+      catch (:done) do
+      (1..4).each do |i|
+        (1..2).each do |j|
+          if not Pokemon.where(box: i).exists?(box_position: j)
+            vacancy = true
+            @pokemon.box_id = i
+            @pokemon.box_position= j
+            throw :done
+          end
+        end
+      end
+    end
+
+
+    @pokemon.user_id= current_user.id
+
+    if vacancy == true
+      @pokemon.save
+    end
+
     redirect_to root_path
   end
 
@@ -30,6 +51,6 @@ class PokemonsController < ApplicationController
   private
 
     def pokemon_params
-      params.require(:pokemon).permit(:id, :name, :number)
+      params.require(:pokemon).permit!
     end
 end

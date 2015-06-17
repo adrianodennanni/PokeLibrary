@@ -9,5 +9,9 @@
       <user-name>PokeLibrary</user-name>
       <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddffadfe5dfe1dfefdfe6dfe3dfe8dff8dfebdff8dff3dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
     </data-source>
+    <data-source name="Rails PokeLibrary: test" uuid="ed010887-0998-431a-97ba-bfc697f26bed">
+      <user-name>rails</user-name>
+      <user-password>dfdadfc5dfc1dfcfdfc7dfc5dfc4</user-password>
+    </data-source>
   </component>
 </project>

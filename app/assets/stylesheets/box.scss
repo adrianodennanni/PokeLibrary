@@ -1,3 +1,116 @@
 // Place all the styles related to the box controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tabs input[type=radio] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.tabs {
+  width: 650px;
+  float: none;
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin:12px auto;
+
+}
+.tabs li{
+  float: left;
+
+}
+.tabs label {
+  display: block;
+  padding: 10px 35px;
+  border-radius: 0 0 0 0;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: 'Lily Script One', helveti;
+  background: #DD0000;
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+  left: 0px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.tabs label:hover {
+  background: #000000;
+  top: 0;
+}
+
+[id^=tab]:checked + label {
+  background: #8B0000;
+  color: white;
+  top: 0;
+}
+
+[id^=tab]:checked ~ [id^=tab-content] {
+  display: block;
+}
+.tab-content{
+  z-index: 2;
+  display: none;
+  text-align: left;
+  width: 350px;
+  font-size: 40px;
+  line-height: 140%;
+  padding-top: 10px;
+  background: #FFFFFF;
+  padding: 15px;
+  color: white;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  box-sizing: border-box;
+  -webkit-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+.box{
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  z-index: -1;
+
+}
+.caixa{
+  position: absolute;
+  left: 35px;
+  top: 100px;
+  z-index: 5;
+  width: 470px;
+  height: 370px;
+  background-color: rgba(0,0,255, 0);
+
+}
+.caixinha{
+  width: 78px;
+  height: 20%;
+  background-color: rgba(255,0,0, 0) ;
+  padding-top: 0px;
+  padding-left: 0px;
+  position: relative;
+  float: left;
+  border: px solid black;
+
+}
+.caixona{
+  width: 530px;
+  height: 600px;
+  background-color: rgba(0,255,0, 0) ;
+  padding: 0px;
+  border: 1px solid black;
+  position: relative;
+  alignment-adjust: auto;
+}
+
+.gif_miniatura{
+  width: 70px;
+  height: 70px;
+}

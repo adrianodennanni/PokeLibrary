@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="Rails PokeLibrary: development" uuid="50fdd143-19d7-4845-bd4e-eb4125a8584d">
-    <database-info product="PostgreSQL" version="9.3.7" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+    <database-info product="PostgreSQL" version="9.3.9" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
       <identifier-quote-string>&quot;</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
@@ -2401,7 +2401,7 @@
       <column name="name" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="pp" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="priority" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="type" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
+      <column name="type1" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="moves_pkey" columns="id"/>
     </table>
     <table name="moves_id_seq" schema="public" catalog="PokeLibrary_development" type="SEQUENCE">
@@ -19071,6 +19071,9 @@
     </procedure>
   </data-source>
   <data-source name="Rails PokeLibrary: production" uuid="bfd246fc-2a24-44b1-8f3d-ec9ae57b8d25">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails PokeLibrary: test" uuid="ed010887-0998-431a-97ba-bfc697f26bed">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
 </component>

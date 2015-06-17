@@ -1,14 +1,131 @@
 <%= form_for @pokemon do |f| %>
-    Name:
-    <%= f.text_field :name %>
-    Box: <%= current_user.boxes.where(number: 1).first.number %>
-    Picture: <img id="pokemon_picture" src=""/>
-    <%= f.submit 'Create' %>
-    <div id="pokemon_list">
+    <div id="sup_form">
+      <div class="input-group">
+        <div class="input-group-addon">Nickname</div>
+        <%= f.text_field :name, :placeholder => 'Enter nickname', :class => 'form-control' %>
+      </div>
+      <br/>
+
+      <div class="col-md-6">
+        <label>EVs</label>
+
+        <div class="input-group">
+          <div class="input-group-addon">HP</div>
+          <%= f.text_field :ev_hp, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-addon">ATK</div>
+          <%= f.text_field :ev_atk, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-addon">DEF</div>
+          <%= f.text_field :ev_def, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-addon">SP. ATK</div>
+          <%= f.text_field :ev_spatk, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-addon">SP. DEF</div>
+          <%= f.text_field :ev_spdef, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-addon">SPE</div>
+          <%= f.text_field :ev_spe, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <label>IVs</label>
+
+        <div class="input-group">
+          <div class="input-group-addon">HP</div>
+          <%= f.text_field :iv_hp, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-addon">ATK</div>
+          <%= f.text_field :iv_atk, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-addon">DEF</div>
+          <%= f.text_field :iv_def, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-addon">SP. ATK</div>
+          <%= f.text_field :iv_spatk, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-addon">SP. DEF</div>
+          <%= f.text_field :iv_spdef, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-addon">SPE</div>
+          <%= f.text_field :iv_spe, :class => 'form-control', :placeholder => '0~255' %>
+        </div>
+      </div>
+
+      <hr>
+      <hr>
+
+      <div class="col-md-4">
+        <label>Moves</label>
+
+        <div class="input-group">
+          <div class="input-group-addon">Move 1</div>
+          <%= f.text_field :move1_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true %>
+        </div>
+        <div class="input-group">
+          <div class="input-group-addon">Move 2</div>
+          <%= f.text_field :move2_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true %>
+        </div>
+        <div class="input-group">
+          <div class="input-group-addon">Move 3</div>
+          <%= f.text_field :move3_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true %>
+        </div>
+        <div class="input-group">
+          <div class="input-group-addon">Move 4</div>
+          <%= f.text_field :move4_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true %>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <label>Info</label>
+
+        <div class="input-group">
+          <div class="input-group-addon">Item</div>
+          <%= f.text_field :item_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true %>
+        </div>
+        <div class="input-group">
+          <div class="input-group-addon">Ability</div>
+          <%= f.text_field :ability_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true %>
+        </div>
+        <div class="input-group">
+          <div class="input-group-addon">Specie</div>
+          <input type="text" id="pokemon_specie" class="form-control" placeholder="Click to choose" readonly/>
+        </div>
+      </div>
+
+      <img id="pokemon_picture" src=""/>
+      <%= f.label 'Shiny' %>
+      <%= f.check_box :shiny, :onclick => "shiny();" %>
+      <%= f.submit 'Create' %>
+    </div>
+
+    <div id="pokemon_list" class="lista">
       <input class="search form-control" placeholder="Search"/>
       <ul class="list" style="list-style: none; padding:0; margin:0;">
-
-
         <% PokemonDefault.where(forme: nil).each do |pkm| %>
             <li>
               <%= f.radio_button :number, pkm.num, :onclick => "render_picture('#{pkm.code}');" %>
@@ -22,4 +139,91 @@
         <% end %>
       </ul>
     </div>
+
+
+    <div id="item_list" class="lista">
+      <input class="search form-control" placeholder="Search"/>
+      <ul class="list" style="list-style: none; padding:0; margin:0;">
+        <% Item.all.each do |item| %>
+            <li>
+              <%= f.radio_button :item_id, item.id, :onclick => "item('#{item.name}');" %>
+              <%= image_tag 'itens/'+item.spritenum.to_s+'.png' %>
+              <span class="item"><%= item.name %></span>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+
+
+    <div id="ability_list" class="lista">
+      <input class="search form-control" placeholder="Search"/>
+      <ul class="list" style="list-style: none; padding:0; margin:0;">
+        <% Ability.all.each do |ability| %>
+            <li>
+              <%= f.radio_button :ability_id, ability.id, :onclick => "ability('#{ability.name}');" %>
+              <span class="ability"><%= ability.name %></span>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+
+
+    <div id="move1_list" class="lista">
+      <input class="search form-control" placeholder="Search"/>
+      <ul class="list" style="list-style: none; padding:0; margin:0;">
+        <% Move.all.each do |mv| %>
+            <li>
+              <%= f.radio_button :move1_id, mv.id, :onclick => "move1('#{mv.name}');" %>
+              <span class="move"><%= mv.name %></span>
+              <%= image_tag 'types/'+mv.type1+'.png' %>
+              <span><%= mv.basePower %></span>/<span><%= mv.accuracy %></span>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div id="move2_list" class="lista">
+      <input class="search form-control" placeholder="Search"/>
+      <ul class="list" style="list-style: none; padding:0; margin:0;">
+        <% Move.all.each do |mv| %>
+            <li>
+              <%= f.radio_button :move2_id, mv.id, :onclick => "move2('#{mv.name}');" %>
+              <span class="move"><%= mv.name %></span>
+              <%= image_tag 'types/'+mv.type1+'.png' %>
+              <span><%= mv.basePower %></span>/<span><%= mv.accuracy %></span>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div id="move3_list" class="lista">
+      <input class="search form-control" placeholder="Search"/>
+      <ul class="list" style="list-style: none; padding:0; margin:0;">
+        <% Move.all.each do |mv| %>
+            <li>
+              <%= f.radio_button :move3_id, mv.id, :onclick => "move3('#{mv.name}');" %>
+              <span class="move"><%= mv.name %></span>
+              <%= image_tag 'types/'+mv.type1+'.png' %>
+              <span><%= mv.basePower %></span>/<span><%= mv.accuracy %></span>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div id="move4_list" class="lista">
+      <input class="search form-control" placeholder="Search"/>
+      <ul class="list" style="list-style: none; padding:0; margin:0;">
+        <% Move.all.each do |mv| %>
+            <li>
+              <%= f.radio_button :move4_id, mv.id, :onclick => "move4('#{mv.name}');" %>
+              <span class="move"><%= mv.name %></span>
+              <%= image_tag 'types/'+mv.type1+'.png' %>
+              <span><%= mv.basePower %></span>/<span><%= mv.accuracy %></span>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+
+
+
 <% end %>

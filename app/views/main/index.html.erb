@@ -9,19 +9,7 @@
 
     </div>
     <div id="box">
-
-      <% Box.find_each do |box| %>
-            <a href="#"><%= box.name %></a>
-      <% end %>
-      <br/>
-      <br/>
-      <% current_user.boxes.first.pokemons.all.each do |pkm| %>
-          <span title="<%= pkm.name %>">
-        <%= image_tag 'miniaturePokemon/'+PokemonDefault.where(forme: nil).find_by_num(pkm.number).code+'.png' %>
-          </span>
-
-      <% end %>
-
+        <%= render partial: 'boxes/box' %>
     </div>
 <% end %>
 
