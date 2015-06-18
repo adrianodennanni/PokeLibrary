@@ -1,9 +1,16 @@
+<script>
+    $(document).ready(function () {
+        $(tab1).click();
+    });
+</script>
+
 <div class="caixona">
   <ul class="tabs">
     <% (1..4).each do |i| %>
         <li>
           <input type="radio" checked name="tabs" id="tab<%= i %>">
           <label for="tab<%= i %>"><%= current_user.boxes.find_by(number: i).name %></label>
+
           <div id="tab-content<%= i %>" class="tab-content animated fadeIn">
             <div id="div<%= i %>">
               <%= image_tag 'Box_'+i.to_s+'.png', :style => 'width:500px;height:455px;' %>
