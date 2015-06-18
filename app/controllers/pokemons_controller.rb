@@ -46,8 +46,8 @@ class PokemonsController < ApplicationController
   end
 
   def destroy
-    @pokemon.destroy
-
+    Pokemon.find(params[:id]).delete
+    redirect_to root_path
   end
 
   private

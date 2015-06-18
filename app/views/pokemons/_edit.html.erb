@@ -120,7 +120,9 @@
       <img id="pokemon_picture" src=""/>
       <%= f.label 'Shiny' %>
       <%= f.check_box :shiny, :onclick => 'shiny();'%>
-      <%= f.submit 'Update' %>
+      <%= f.submit 'Update', :class => 'btn btn-primary' %>
+      <%= button_to 'Delete', @pokemon, method: 'delete', :class => 'btn btn-danger'  %>
+
     </div>
 
     <div id="pokemon_list" class="lista">
