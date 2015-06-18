@@ -22,7 +22,7 @@ class PokemonsController < ApplicationController
     catch (:done) do
       (1..4).each do |i|
         (1..30).each do |j|
-          if not Pokemon.where(box: i).exists?(box_position: j)
+          if not current_user.pokemons.where(box: i).exists?(box_position: j)
             vacancy = true
             @pokemon.box_id = i
             @pokemon.box_position= j
