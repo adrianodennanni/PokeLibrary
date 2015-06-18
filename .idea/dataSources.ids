@@ -2490,7 +2490,6 @@
       <column name="id" sqlType="serial" precision="10" scale="0" nullable="false" jdbcType="4" def="bmV4dHZhbCgncG9rZW1vbnNfaWRfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
       <column name="name" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="number" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="item" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="shiny" sqlType="bool" precision="1" scale="0" nullable="true" jdbcType="-7"/>
       <column name="pokeball" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="nature" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>

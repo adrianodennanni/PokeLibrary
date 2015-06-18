@@ -59,13 +59,11 @@
   width: 350px;
   font-size: 40px;
   line-height: 140%;
-  padding-top: 10px;
   background: #FFFFFF;
-  padding: 15px;
-  color: white;
+
   position: absolute;
-  top: 60px;
-  left: 0;
+  top: 80px;
+  left: 50px;
   box-sizing: border-box;
   -webkit-animation-duration: 0.5s;
   -o-animation-duration: 0.5s;
@@ -92,25 +90,11 @@
 .caixinha{
   width: 78px;
   height: 20%;
-  background-color: rgba(255,0,0, 0) ;
+  background-color: rgba(255,0,0,0);
   padding-top: 0px;
   padding-left: 0px;
   position: relative;
   float: left;
-  border: px solid black;
 
 }
-.caixona{
-  width: 530px;
-  height: 600px;
-  background-color: rgba(0,255,0, 0) ;
-  padding: 0px;
-  border: 1px solid black;
-  position: relative;
-  alignment-adjust: auto;
-}
 
-.gif_miniatura{
-  width: 70px;
-  height: 70px;
-}

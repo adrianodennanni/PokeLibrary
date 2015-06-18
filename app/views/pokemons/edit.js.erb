@@ -1,0 +1,168 @@
+$("#party").html("<%= escape_javascript(render 'edit') %>")
+
+//Render pokemon picture and specie name
+function render_picture(code) {
+
+    if ($('#pokemon_shiny').is(":checked")){
+        $("#pokemon_picture").attr("src","/assets/shinyPokemon/"+code+".gif");
+    }
+    else{
+        $("#pokemon_picture").attr("src","/assets/pokemon/"+code+".gif");
+    }
+
+
+
+    str = code.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+        return letter.toUpperCase();
+    });
+    $("#pokemon_name").val(str);
+    $("#pokemon_specie").val(str);
+}
+
+function shiny() {
+    code=$("#pokemon_name").val();
+
+    code = code.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+        return letter.toLowerCase();
+    });
+
+
+    if ($('#pokemon_shiny').is(":checked")){
+        $("#pokemon_picture").attr("src","/assets/shinyPokemon/"+code+".gif");
+    }
+    else{
+        $("#pokemon_picture").attr("src","/assets/pokemon/"+code+".gif");
+    }
+}
+
+//Render item name
+function item(name) {
+    $("#pokemon_item_id").val(name);
+}
+
+//Render ability name
+function ability(name) {
+    $("#pokemon_ability_id").val(name);
+}
+
+//Render moves name
+function move1(name) {
+    $("#pokemon_move1_id").val(name);
+}
+function move2(name) {
+    $("#pokemon_move2_id").val(name);
+}
+function move3(name) {
+    $("#pokemon_move3_id").val(name);
+}
+function move4(name) {
+    $("#pokemon_move4_id").val(name);
+}
+
+//List.js
+var option1 = {
+    valueNames: ['name']
+};
+
+var option2 = {
+    valueNames: ['item']
+};
+
+var option3 = {
+    valueNames: ['ability']
+};
+
+var option4 = {
+    valueNames: ['move']
+};
+
+var pokeList = new List('pokemon_list', option1);
+var itemList = new List('item_list', option2);
+var abilityList = new List('ability_list', option3);
+var move1List = new List('move1_list', option4);
+var move2List = new List('move2_list', option4);
+var move3List = new List('move3_list', option4);
+var move4List = new List('move4_list', option4);
+
+
+//OnLoad
+$(document).ready(function() {
+    $("#item_list").hide();
+    $("#ability_list").hide();
+    $("#move1_list").hide();
+    $("#move2_list").hide();
+    $("#move3_list").hide();
+    $("#move4_list").hide();
+
+    $("#pokemon_specie").click(function() {
+        $("#item_list").hide();
+        $("#ability_list").hide();
+        $("#move1_list").hide();
+        $("#move2_list").hide();
+        $("#move3_list").hide();
+        $("#move4_list").hide();
+        $("#pokemon_list").show();
+    });
+
+    $("#pokemon_item_id").click(function() {
+        $("#pokemon_list").hide();
+        $("#ability_list").hide();
+        $("#move1_list").hide();
+        $("#move2_list").hide();
+        $("#move3_list").hide();
+        $("#move4_list").hide();
+        $("#item_list").show();
+    });
+
+    $("#pokemon_ability_id").click(function() {
+        $("#pokemon_list").hide();
+        $("#item_list").hide();
+        $("#move1_list").hide();
+        $("#move2_list").hide();
+        $("#move3_list").hide();
+        $("#move4_list").hide();
+        $("#ability_list").show();
+    });
+
+    $("#pokemon_move1_id").click(function() {
+        $("#pokemon_list").hide();
+        $("#item_list").hide();
+        $("#ability_list").hide();
+        $("#move2_list").hide();
+        $("#move3_list").hide();
+        $("#move4_list").hide();
+        $("#move1_list").show();
+    });
+
+    $("#pokemon_move2_id").click(function() {
+        $("#pokemon_list").hide();
+        $("#item_list").hide();
+        $("#ability_list").hide();
+        $("#move1_list").hide();
+        $("#move3_list").hide();
+        $("#move4_list").hide();
+        $("#move2_list").show();
+    });
+
+    $("#pokemon_move3_id").click(function() {
+        $("#pokemon_list").hide();
+        $("#item_list").hide();
+        $("#ability_list").hide();
+        $("#move1_list").hide();
+        $("#move2_list").hide();
+        $("#move4_list").hide();
+        $("#move3_list").show();
+    });
+
+    $("#pokemon_move4_id").click(function() {
+        $("#pokemon_list").hide();
+        $("#item_list").hide();
+        $("#ability_list").hide();
+        $("#move1_list").hide();
+        $("#move2_list").hide();
+        $("#move3_list").hide();
+        $("#move4_list").show();
+    });
+
+
+});

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150616222424) do
+ActiveRecord::Schema.define(version: 20150617203923) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -103,7 +103,6 @@ ActiveRecord::Schema.define(version: 20150616222424) do
   create_table "pokemons", force: :cascade do |t|
     t.string   "name"
     t.integer  "number"
-    t.string   "item"
     t.boolean  "shiny"
     t.string   "pokeball"
     t.string   "nature"
