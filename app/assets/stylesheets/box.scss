@@ -7,12 +7,8 @@
 
 }
 .tabs {
-  width: 650px;
-  float: none;
+  margin: 10px auto;
   list-style: none;
-  position: relative;
-  padding: 0;
-  margin:12px auto;
 
 }
 .tabs li{
@@ -21,7 +17,7 @@
 }
 .tabs label {
   display: block;
-  padding: 10px 35px;
+  padding: 10px 22px;
   border-radius: 0 0 0 0;
   color: #FFFFFF;
   font-size: 32px;
@@ -61,7 +57,7 @@
   background: #FFFFFF;
   position: absolute;
   top: 80px;
-  left: 50px;
+  left: 40px;
   box-sizing: border-box;
   -webkit-animation-duration: 0.5s;
   -o-animation-duration: 0.5s;
@@ -77,8 +73,8 @@
 }
 .caixa{
   position: absolute;
-  left: 35px;
-  top: 100px;
+  left: 15px;
+  top: 89px;
   z-index: 5;
   width: 470px;
   height: 370px;
