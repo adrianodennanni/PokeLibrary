@@ -1,129 +1,136 @@
+<%= button_to 'Delete', @pokemon, method: 'delete', :class => 'btn btn-danger', :style => 'width: 100%;' %>
 <%= form_for @pokemon do |f| %>
-    <div id="sup_form">
-      <div class="input-group">
-        <div class="input-group-addon">Nickname</div>
-        <%= f.text_field :name, :placeholder => 'Enter nickname', :class => 'form-control' %>
-      </div>
-      <br/>
 
-      <div class="col-md-6">
+    <div class="input-group">
+      <div class="input-group-addon">Nickname</div>
+      <%= f.text_field :name, :placeholder => 'Enter nickname', :class => 'form-control' %>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-4">
         <label>EVs</label>
 
         <div class="input-group">
           <div class="input-group-addon">HP</div>
-          <%= f.text_field :ev_hp, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :ev_hp, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
 
         <div class="input-group">
           <div class="input-group-addon">ATK</div>
-          <%= f.text_field :ev_atk, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :ev_atk, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
 
         <div class="input-group">
           <div class="input-group-addon">DEF</div>
-          <%= f.text_field :ev_def, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :ev_def, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
 
         <div class="input-group">
           <div class="input-group-addon">SP. ATK</div>
-          <%= f.text_field :ev_spatk, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :ev_spatk, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
 
         <div class="input-group">
           <div class="input-group-addon">SP. DEF</div>
-          <%= f.text_field :ev_spdef, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :ev_spdef, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
 
         <div class="input-group">
           <div class="input-group-addon">SPE</div>
-          <%= f.text_field :ev_spe, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :ev_spe, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
       </div>
 
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <label>IVs</label>
 
         <div class="input-group">
           <div class="input-group-addon">HP</div>
-          <%= f.text_field :iv_hp, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :iv_hp, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
 
         <div class="input-group">
           <div class="input-group-addon">ATK</div>
-          <%= f.text_field :iv_atk, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :iv_atk, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
 
         <div class="input-group">
           <div class="input-group-addon">DEF</div>
-          <%= f.text_field :iv_def, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :iv_def, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
 
         <div class="input-group">
           <div class="input-group-addon">SP. ATK</div>
-          <%= f.text_field :iv_spatk, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :iv_spatk, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
 
         <div class="input-group">
           <div class="input-group-addon">SP. DEF</div>
-          <%= f.text_field :iv_spdef, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :iv_spdef, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
 
         <div class="input-group">
           <div class="input-group-addon">SPE</div>
-          <%= f.text_field :iv_spe, :class => 'form-control', :placeholder => '0~255' %>
+          <%= f.text_field :iv_spe, :class => 'form-control', :placeholder => '0~255', :style => 'width: 100%;' %>
         </div>
       </div>
 
-      <hr>
-      <hr>
-
       <div class="col-md-4">
+
         <label>Moves</label>
 
         <div class="input-group">
           <div class="input-group-addon">Move 1</div>
-          <%= f.text_field :move1_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true, :value => (Move.find(@pokemon.move1_id).name if  @pokemon.move1_id) %>
+          <%= f.text_field :move1_id, :class => 'form-control', :placeholder => 'Choose', :readonly => true, :value => (Move.find(@pokemon.move1_id).name if @pokemon.move1_id) %>
         </div>
         <div class="input-group">
           <div class="input-group-addon">Move 2</div>
-          <%= f.text_field :move2_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true, :value => (Move.find(@pokemon.move2_id).name if  @pokemon.move2_id) %>
+          <%= f.text_field :move2_id, :class => 'form-control', :placeholder => 'Choose', :readonly => true, :value => (Move.find(@pokemon.move2_id).name if @pokemon.move2_id) %>
         </div>
         <div class="input-group">
           <div class="input-group-addon">Move 3</div>
-          <%= f.text_field :move3_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true, :value => (Move.find(@pokemon.move3_id).name if  @pokemon.move3_id) %>
+          <%= f.text_field :move3_id, :class => 'form-control', :placeholder => 'Choose', :readonly => true, :value => (Move.find(@pokemon.move3_id).name if @pokemon.move3_id) %>
         </div>
         <div class="input-group">
           <div class="input-group-addon">Move 4</div>
-          <%= f.text_field :move4_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true, :value => (Move.find(@pokemon.move4_id).name if  @pokemon.move4_id) %>
+          <%= f.text_field :move4_id, :class => 'form-control', :placeholder => 'Choose', :readonly => true, :value => (Move.find(@pokemon.move4_id).name if @pokemon.move4_id) %>
         </div>
-
+        <% unless @pokemon.shiny? %>
+        <img id="pokemon_picture" src="<%= image_path "pokemon/#{PokemonDefault.where(forme: nil).find_by(num: @pokemon.number).code}.gif"%>"/>
+        <% else %>
+            <img id="pokemon_picture" src="<%= image_path "shinyPokemon/#{PokemonDefault.where(forme: nil).find_by(num: @pokemon.number).code}.gif"%>"/>
+        <% end %>
       </div>
-
-      <div class="col-md-4">
-        <label>Info</label>
-
-        <div class="input-group">
-          <div class="input-group-addon">Item</div>
-          <%= f.text_field :item_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true, :value => (Item.find(@pokemon.item_id).name if @pokemon.item_id) %>
-        </div>
-        <div class="input-group">
-          <div class="input-group-addon">Ability</div>
-          <%= f.text_field :ability_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true, :value => (Ability.find(@pokemon.ability_id).name if @pokemon.ability_id) %>
-        </div>
-        <div class="input-group">
-          <div class="input-group-addon">Specie</div>
-          <input type="text" id="pokemon_specie" class="form-control" placeholder="Click to choose" value="<%= PokemonDefault.where(forme: nil).find_by(num: @pokemon.number).name %>" readonly/>
-        </div>
-      </div>
-
-      <img id="pokemon_picture" src=""/>
-      <%= f.label 'Shiny' %>
-      <%= f.check_box :shiny, :onclick => 'shiny();'%>
-      <%= f.submit 'Update', :class => 'btn btn-primary' %>
-      <%= button_to 'Delete', @pokemon, method: 'delete', :class => 'btn btn-danger'  %>
-
     </div>
+
+    <hr>
+    <div class="row">
+
+    <div class="col-md-6">
+
+
+      <div class="input-group">
+        <div class="input-group-addon">Item</div>
+        <%= f.text_field :item_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true, :value => (Item.find(@pokemon.item_id).name if @pokemon.item_id) %>
+      </div>
+      <div class="input-group">
+        <div class="input-group-addon">Ability</div>
+        <%= f.text_field :ability_id, :class => 'form-control', :placeholder => 'Click to choose', :readonly => true, :value => (Ability.find(@pokemon.ability_id).name if @pokemon.ability_id) %>
+      </div>
+      </div>
+      <div class="col-md-6">
+      <div class="input-group">
+        <div class="input-group-addon">Specie</div>
+        <input type="text" id="pokemon_specie" class="form-control" placeholder="Click to choose" value="<%= PokemonDefault.where(forme: nil).find_by(num: @pokemon.number).name %>" readonly/>
+      </div>
+        <%= f.label 'Shiny' %>
+        <%= f.check_box :shiny, :onclick => 'shiny();' %>
+        <%= f.submit 'Update', :class => 'btn btn-primary' %>
+    </div>
+
+</div>
+
 
     <div id="pokemon_list" class="lista">
       <input class="search form-control" placeholder="Search"/>

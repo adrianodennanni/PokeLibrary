@@ -5,29 +5,29 @@
 </script>
 
 
-  <ul class="tabs">
-    <% (1..4).each do |i| %>
-        <li>
-          <input type="radio" checked name="tabs" id="tab<%= i %>">
-          <label for="tab<%= i %>"><%= current_user.boxes.find_by(number: i).name %></label>
+<ul class="tabs">
+  <% (1..4).each do |i| %>
+      <li>
+        <input type="radio" checked name="tabs" id="tab<%= i %>">
+        <label for="tab<%= i %>"><%= current_user.boxes.find_by(number: i).name %></label>
 
-          <div id="tab-content<%= i %>" class="tab-content animated fadeIn">
-            <div id="div<%= i %>">
-              <%= image_tag 'Box_'+i.to_s+'.png', :style => 'width:500px;height:455px;' %>
-              <div class="caixa">
-                <% (1..30).each do |j| %>
-                    <div id="slot<%= i %>-<%= j %>" class="caixinha">
-                      <% if current_user.pokemons.where(box: i).exists?(box_position: j) %>
-                          <% pokemon=current_user.pokemons.where(box: i).find_by(box_position: j) %>
-                          <%= link_to image_tag('miniaturePokemon/'+PokemonDefault.where(forme: nil).find_by_num(pokemon.number).code+'.png',
-                                                size: '80x60'), edit_pokemon_path(pokemon), remote: true %>
-                      <% end %>
-                    </div>
-                <% end %>
-              </div>
+        <div id="tab-content<%= i %>" class="tab-content animated fadeIn">
+          <div id="div<%= i %>">
+            <%= image_tag 'Box_'+i.to_s+'.png', :style => 'width:500px;height:455px;' %>
+            <div class="caixa">
+              <% (1..30).each do |j| %>
+                  <div id="slot<%= i %>-<%= j %>" class="caixinha">
+                    <% if current_user.pokemons.where(box: i).exists?(box_position: j) %>
+                        <% pokemon=current_user.pokemons.where(box: i).find_by(box_position: j) %>
+                        <%= link_to image_tag('miniaturePokemon/'+PokemonDefault.where(forme: nil).find_by_num(pokemon.number).code+'.png',
+                                              size: '80x60'), edit_pokemon_path(pokemon), remote: true %>
+                    <% end %>
+                  </div>
+              <% end %>
             </div>
           </div>
-        </li>
-    <% end %>
-  </ul>
+        </div>
+      </li>
+  <% end %>
+</ul>
 
