@@ -19,8 +19,10 @@
                   <div id="slot<%= i %>-<%= j %>" class="caixinha">
                     <% if current_user.pokemons.where(box: i).exists?(box_position: j) %>
                         <% pokemon=current_user.pokemons.where(box: i).find_by(box_position: j) %>
-                        <%= link_to image_tag('miniaturePokemon/'+PokemonDefault.where(forme: nil).find_by_num(pokemon.number).code+'.png',
-                                              size: '80x60'), edit_pokemon_path(pokemon), remote: true %>
+                        <%= (link_to image_tag('miniaturePokemon/'+PokemonDefault.where(forme: nil).find_by_num(pokemon.number).code+'.png',
+                                              size: '80x60'), edit_pokemon_path(pokemon), remote: true) unless pokemon.shiny? %>
+                        <%= (link_to image_tag('miniaturePokemonShiny/'+PokemonDefault.where(forme: nil).find_by_num(pokemon.number).code+'.png',
+                                               size: '80x60'), edit_pokemon_path(pokemon), remote: true) if pokemon.shiny? %>
                     <% end %>
                   </div>
               <% end %>

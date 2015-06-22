@@ -1,41 +1,33 @@
-<div class="partybox">
-  <%= image_tag '0.png' %>
-  <% form_for @party do |f| %>
-      <%= f.collection_select :pkm1_id, current_user.pokemons.order(:name), :id, :name %>
-  <% end %>
-</div>
+<%= form_for @party do |f| %>
+    <div id="pkm1" class="partybox">
+      <%= image_tag '0.png' %>
+      <%= f.collection_select :pkm1_id, current_user.pokemons.order(:name), :id, :name, prompt: true %>
+    </div>
 
-<div class="partybox">
-  <%= image_tag '0.png' %>
-  <% form_for @party do |f| %>
-      <%= f.collection_select :pkm2_id, current_user.pokemons.order(:name), :id, :name %>
-  <% end %>
-</div>
+    <div id="pkm2" class="partybox">
+      <%= image_tag '0.png' %>
+      <%= f.collection_select :pkm2_id, current_user.pokemons.order(:name), :id, :name, prompt: true %>
+    </div>
 
-<div class="partybox">
-  <%= image_tag '0.png' %>
-  <% form_for @party do |f| %>
-      <%= f.collection_select :pkm3_id, current_user.pokemons.order(:name), :id, :name %>
-  <% end %>
-</div>
+    <div id="pkm3" class="partybox">
+      <%= image_tag '0.png' %>
+      <%= f.collection_select :pkm3_id, current_user.pokemons.order(:name), :id, :name, prompt: true %>
+    </div>
 
-<div class="partybox">
-  <%= image_tag '0.png' %>
-  <% form_for @party do |f| %>
-      <%= f.collection_select :pkm4_id, current_user.pokemons.order(:name), :id, :name %>
-  <% end %>
-</div>
+    <div id="pkm4" class="partybox">
+      <%= image_tag '0.png' %>
+      <%= f.collection_select :pkm4_id, current_user.pokemons.order(:name), :id, :name, prompt: true %>
+    </div>
 
-<div class="partybox">
-  <%= image_tag '0.png' %>
-  <% form_for @party do |f| %>
-      <%= f.collection_select :pkm5_id, current_user.pokemons.order(:name), :id, :name %>
-  <% end %>
-</div>
+    <div id="pkm5" class="partybox">
+      <%= image_tag '0.png' %>
+      <%= f.collection_select :pkm5_id, current_user.pokemons.order(:name), :id, :name, prompt: true %>
+    </div>
 
-<div class="partybox">
-  <%= image_tag '0.png' %>
-  <% form_for @party do |f| %>
-      <%= f.collection_select :pkm6_id, current_user.pokemons.order(:name), :id, :name %>
-  <% end %>
-</div>
+    <div id="pkm6" class="partybox">
+      <%= image_tag '0.png' %>
+      <%= f.collection_select :pkm6_id, current_user.pokemons.order(:name), :id, :name, prompt: true %>
+    </div>
+
+    <%= f.submit 'Save', :class => 'btn btn-primary', :style => 'width: 100%;' %>
+<% end %>

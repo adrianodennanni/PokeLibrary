@@ -6,4 +6,7 @@ class Party < ActiveRecord::Base
   has_one :pokemon, foreign_key: 'pkm5_id'
   has_one :pokemon, foreign_key: 'pkm6_id'
   belongs_to :user
+
+
+
 end
