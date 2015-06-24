@@ -11,6 +11,15 @@
 }
 
 .partybox img{
-  max-height: 100%;
-  max-width: 100%;
+  height: 90px;
+  width: auto;
+  max-width: 130px;
+}
+
+.description{
+  float: right;
+  resize: none;
+  height: 88px;
+  width: 280px;
+  border: none;
 }

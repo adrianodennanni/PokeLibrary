@@ -1,1 +1,25 @@
 $("#party").html("<%= escape_javascript(render 'new') %>")
+
+function pkm(i,id) {
+    var name=$('#'+id).data('name');
+    var specie=$('#'+id).data('specie');
+    var item=$('#'+id).data('item');
+    var code=$('#'+id).data('code');
+    var ability=$('#'+id).data('ability');
+    var move1=$('#'+id).data('move1');
+    var move2=$('#'+id).data('move2');
+    var move3=$('#'+id).data('move3');
+    var move4=$('#'+id).data('move4');
+    var shiny=$('#'+id).data('shiny');
+
+    if(shiny==false){
+        $("#pkm"+i+"_img").attr("src","/assets/pokemon/"+code+".gif");
+    }
+    else{
+        $("#pkm"+i+"_img").attr("src","/assets/shinyPokemon/"+code+".gif");
+    }
+
+    $("#pkm"+i+"_description").val("Name: "+name+"   Specie: "+specie+"\nItem: "+item+"    Ability: "+ability
+    +"\nMove 1: "+move1+"  Move 2: "+move2+"  Move 3: "+move3+"  Move 4: "+move4);
+
+}

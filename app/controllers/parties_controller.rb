@@ -14,6 +14,26 @@ class PartiesController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @party = Party.find(params[:id])
+    respond_to do |format|
+      format.html { render :partial => 'edit' }
+      format.js { render :edit }
+    end
+  end
+
+  def update
+    @party = Party.find(params[:id])
+    @party.update_attributes(party_params)
+    redirect_to root_path
+
+  end
+
+  def destroy
+    Party.find(params[:id]).delete
+    redirect_to root_path
+  end
+
   private
 
   def party_params

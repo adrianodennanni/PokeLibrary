@@ -50,7 +50,6 @@ gem 'autoprefixer-rails'
 gem 'devise'
 gem 'omniauth-facebook'
 gem 'bootstrap-social-rails'
-gem 'gon'
 gem 'figaro'
 
 gem 'rails_12factor', group: :production # Necessary for Heroku
