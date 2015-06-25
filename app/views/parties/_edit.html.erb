@@ -7,7 +7,7 @@
           <%= image_tag 'shinyPokemon/'+@code[i].to_s+'.gif', :id => "pkm#{i}_img" if (@shiny[i] and !@pkmid[i]) %>
           <%= image_tag '0.png', :id => "pkm#{i}_img"  if @pkmid[i] %>
           <select name="party[pkm<%= i %>_id]" id="party_pkm<%= i %>_id" onchange='pkm(<%=i%>,"<%=i%>-"+value);'>
-            <option value="">Please select</option>
+            <option value="0">Please select</option>
             <% current_user.pokemons.order(:name).each do |pkm| %>
                 <option id="<%= i %>-<%= pkm.id %>" value="<%= pkm.id %>" data-name="<%= pkm.name %>"
                         data-specie="<%= PokemonDefault.where(forme: nil).find_by(num: pkm.number).name %>"

@@ -47,6 +47,29 @@ class PokemonsController < ApplicationController
 
   def destroy
     Pokemon.find(params[:id]).delete
+
+    Party.all.each do |party|
+      if party.pkm1_id.to_s == params[:id].to_s
+        party.pkm1_id = nil
+        party.save
+      elsif party.pkm2_id.to_s == params[:id].to_s
+        party.pkm2_id = nil
+        party.save
+      elsif party.pkm3_id.to_s == params[:id].to_s
+        party.pkm3_id = nil
+        party.save
+      elsif party.pkm4_id.to_s == params[:id].to_s
+        party.pkm4_id = nil
+        party.save
+      elsif party.pkm5_id.to_s == params[:id].to_s
+        party.pkm5_id = nil
+        party.save
+      elsif party.pkm6_id.to_s == params[:id].to_s
+        party.pkm6_id = nil
+        party.save
+      end
+    end
+
     redirect_to root_path
   end
 

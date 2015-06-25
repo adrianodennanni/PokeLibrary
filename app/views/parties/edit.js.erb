@@ -1,6 +1,6 @@
 $("#party").html("<%= escape_javascript(render 'edit') %>")
 
-$(document).ready(function() {
+$(document).ready(function () {
     $("#party_pkm1_id").val(<%= @party.pkm1_id if @party.pkm1_id %>);
     $("#party_pkm2_id").val(<%= @party.pkm2_id if @party.pkm2_id %>);
     $("#party_pkm3_id").val(<%= @party.pkm3_id if @party.pkm3_id %>);
@@ -8,28 +8,85 @@ $(document).ready(function() {
     $("#party_pkm5_id").val(<%= @party.pkm5_id if @party.pkm5_id %>);
     $("#party_pkm6_id").val(<%= @party.pkm6_id if @party.pkm6_id %>);
 
+    if (<%= not @pkmid[1] %>) $("#pkm1_description").val("Name: <%= Pokemon.find(@party.pkm1_id ).name if @party.pkm1_id %>" +
+            " Specie: <%= PokemonDefault.where(forme: nil).find_by(num: Pokemon.find(@party.pkm1_id ).number).name if @party.pkm1_id %>" +
+            "\nItem: <%= Item.find(Pokemon.find(@party.pkm1_id).item_id).name if @party.pkm1_id and Pokemon.find(@party.pkm1_id).item_id %>    " +
+            "Ability: <%= Ability.find(Pokemon.find(@party.pkm1_id).ability_id).name if @party.pkm1_id and Pokemon.find(@party.pkm1_id).ability_id %>\n" +
+            "Move 1: <%= Move.find(Pokemon.find(@party.pkm1_id).move1_id).name if @party.pkm1_id and Pokemon.find(@party.pkm1_id).move1_id%>\n" +
+            "Move 2: <%= Move.find(Pokemon.find(@party.pkm1_id).move2_id).name if @party.pkm1_id and Pokemon.find(@party.pkm1_id).move2_id%>\n" +
+            "Move 3: <%= Move.find(Pokemon.find(@party.pkm1_id).move3_id).name if @party.pkm1_id and Pokemon.find(@party.pkm1_id).move3_id%>\n" +
+            "Move 4: <%= Move.find(Pokemon.find(@party.pkm1_id).move4_id).name if @party.pkm1_id and Pokemon.find(@party.pkm1_id).move4_id%>");
+
+    if (<%= not @pkmid[2] %>) $("#pkm2_description").val("Name: <%= Pokemon.find(@party.pkm2_id ).name if @party.pkm2_id %>" +
+            " Specie: <%= PokemonDefault.where(forme: nil).find_by(num: Pokemon.find(@party.pkm2_id ).number).name if @party.pkm2_id %>" +
+            "\nItem: <%= Item.find(Pokemon.find(@party.pkm2_id).item_id).name if @party.pkm2_id and Pokemon.find(@party.pkm2_id).item_id %>    " +
+            "Ability: <%= Ability.find(Pokemon.find(@party.pkm2_id).ability_id).name if @party.pkm2_id and Pokemon.find(@party.pkm2_id).ability_id %>\n" +
+            "Move 1: <%= Move.find(Pokemon.find(@party.pkm2_id).move1_id).name if @party.pkm2_id and Pokemon.find(@party.pkm2_id).move1_id %>\n" +
+            "Move 2: <%= Move.find(Pokemon.find(@party.pkm2_id).move2_id).name if @party.pkm2_id and Pokemon.find(@party.pkm2_id).move2_id %>\n" +
+            "Move 3: <%= Move.find(Pokemon.find(@party.pkm2_id).move3_id).name if @party.pkm2_id and Pokemon.find(@party.pkm2_id).move3_id %>\n" +
+            "Move 4: <%= Move.find(Pokemon.find(@party.pkm2_id).move4_id).name if @party.pkm2_id and Pokemon.find(@party.pkm2_id).move4_id %>");
+
+    if (<%= not @pkmid[3] %>) $("#pkm3_description").val("Name: <%= Pokemon.find(@party.pkm3_id ).name if @party.pkm3_id %>" +
+            " Specie: <%= PokemonDefault.where(forme: nil).find_by(num: Pokemon.find(@party.pkm3_id ).number).name if @party.pkm3_id %>" +
+            "\nItem: <%= Item.find(Pokemon.find(@party.pkm3_id).item_id).name if @party.pkm3_id and Pokemon.find(@party.pkm3_id).item_id %>    " +
+            "Ability: <%= Ability.find(Pokemon.find(@party.pkm3_id).ability_id).name if @party.pkm3_id and Pokemon.find(@party.pkm3_id).ability_id %>\n" +
+            "Move 1: <%= Move.find(Pokemon.find(@party.pkm3_id).move1_id).name if @party.pkm3_id and Pokemon.find(@party.pkm3_id).move1_id %>\n" +
+            "Move 2: <%= Move.find(Pokemon.find(@party.pkm3_id).move2_id).name if @party.pkm3_id and Pokemon.find(@party.pkm3_id).move2_id %>\n" +
+            "Move 3: <%= Move.find(Pokemon.find(@party.pkm3_id).move3_id).name if @party.pkm3_id and Pokemon.find(@party.pkm3_id).move3_id %>\n" +
+            "Move 4: <%= Move.find(Pokemon.find(@party.pkm3_id).move4_id).name if @party.pkm3_id and Pokemon.find(@party.pkm3_id).move4_id %>");
+
+    if (<%= not @pkmid[4] %>) $("#pkm4_description").val("Name: <%= Pokemon.find(@party.pkm4_id ).name if @party.pkm4_id %>" +
+            " Specie: <%= PokemonDefault.where(forme: nil).find_by(num: Pokemon.find(@party.pkm4_id ).number).name if @party.pkm4_id %>" +
+            "\nItem: <%= Item.find(Pokemon.find(@party.pkm4_id).item_id).name if @party.pkm4_id and Pokemon.find(@party.pkm4_id).item_id %>    " +
+            "Ability: <%= Ability.find(Pokemon.find(@party.pkm4_id).ability_id).name if @party.pkm4_id and Pokemon.find(@party.pkm4_id).ability_id %>\n" +
+            "Move 1: <%= Move.find(Pokemon.find(@party.pkm4_id).move1_id).name if @party.pkm4_id and Pokemon.find(@party.pkm4_id).move1_id %>\n" +
+            "Move 2: <%= Move.find(Pokemon.find(@party.pkm4_id).move2_id).name if @party.pkm4_id and Pokemon.find(@party.pkm4_id).move2_id %>\n" +
+            "Move 3: <%= Move.find(Pokemon.find(@party.pkm4_id).move3_id).name if @party.pkm4_id and Pokemon.find(@party.pkm4_id).move3_id %>\n" +
+            "Move 4: <%= Move.find(Pokemon.find(@party.pkm4_id).move4_id).name if @party.pkm4_id and Pokemon.find(@party.pkm4_id).move4_id %>");
+
+    if (<%= not @pkmid[5] %>) $("#pkm5_description").val("Name: <%= Pokemon.find(@party.pkm5_id ).name if @party.pkm5_id %>" +
+            " Specie: <%= PokemonDefault.where(forme: nil).find_by(num: Pokemon.find(@party.pkm5_id ).number).name if @party.pkm5_id %>" +
+            "\nItem: <%= Item.find(Pokemon.find(@party.pkm5_id).item_id).name if @party.pkm5_id and Pokemon.find(@party.pkm5_id).item_id %>    " +
+            "Ability: <%= Ability.find(Pokemon.find(@party.pkm5_id).ability_id).name if @party.pkm5_id and Pokemon.find(@party.pkm5_id).ability_id %>\n" +
+            "Move 1: <%= Move.find(Pokemon.find(@party.pkm5_id).move1_id).name if @party.pkm5_id and Pokemon.find(@party.pkm5_id).move1_id %>\n" +
+            "Move 2: <%= Move.find(Pokemon.find(@party.pkm5_id).move2_id).name if @party.pkm5_id and Pokemon.find(@party.pkm5_id).move2_id %>\n" +
+            "Move 3: <%= Move.find(Pokemon.find(@party.pkm5_id).move3_id).name if @party.pkm5_id and Pokemon.find(@party.pkm5_id).move3_id %>\n" +
+            "Move 4: <%= Move.find(Pokemon.find(@party.pkm5_id).move4_id).name if @party.pkm5_id and Pokemon.find(@party.pkm5_id).move4_id %>");
+
+    if (<%= not @pkmid[6] %>) $("#pkm6_description").val("Name: <%= Pokemon.find(@party.pkm6_id ).name if @party.pkm6_id %>" +
+            " Specie: <%= PokemonDefault.where(forme: nil).find_by(num: Pokemon.find(@party.pkm6_id ).number).name if @party.pkm6_id %>" +
+            "\nItem: <%= Item.find(Pokemon.find(@party.pkm6_id).item_id).name if @party.pkm6_id and Pokemon.find(@party.pkm6_id).item_id %>    " +
+            "Ability: <%= Ability.find(Pokemon.find(@party.pkm6_id).ability_id).name if @party.pkm6_id and Pokemon.find(@party.pkm6_id).ability_id %>\n" +
+            "Move 1: <%= Move.find(Pokemon.find(@party.pkm6_id).move1_id).name if @party.pkm6_id and Pokemon.find(@party.pkm6_id).move1_id %>\n" +
+            "Move 2: <%= Move.find(Pokemon.find(@party.pkm6_id).move2_id).name if @party.pkm6_id and Pokemon.find(@party.pkm6_id).move2_id %>\n" +
+            "Move 3: <%= Move.find(Pokemon.find(@party.pkm6_id).move3_id).name if @party.pkm6_id and Pokemon.find(@party.pkm6_id).move3_id %>\n" +
+            "Move 4: <%= Move.find(Pokemon.find(@party.pkm6_id).move4_id).name if @party.pkm6_id and Pokemon.find(@party.pkm6_id).move4_id %>");
+
+
 });
 
-function pkm(i,id) {
-    var name=$('#'+id).data('name');
-    var specie=$('#'+id).data('specie');
-    var item=$('#'+id).data('item');
-    var code=$('#'+id).data('code');
-    var ability=$('#'+id).data('ability');
-    var move1=$('#'+id).data('move1');
-    var move2=$('#'+id).data('move2');
-    var move3=$('#'+id).data('move3');
-    var move4=$('#'+id).data('move4');
-    var shiny=$('#'+id).data('shiny');
+function pkm(i, id) {
+    var name = $('#' + id).data('name');
+    var specie = $('#' + id).data('specie');
+    var item = $('#' + id).data('item');
+    var code = $('#' + id).data('code');
+    var ability = $('#' + id).data('ability');
+    var move1 = $('#' + id).data('move1');
+    var move2 = $('#' + id).data('move2');
+    var move3 = $('#' + id).data('move3');
+    var move4 = $('#' + id).data('move4');
+    var shiny = $('#' + id).data('shiny');
 
-    if(shiny==false){
-        $("#pkm"+i+"_img").attr("src","/assets/pokemon/"+code+".gif");
+    if ((id != "1-0") && (id != "2-0") && (id != "3-0") && (id != "4-0") && (id != "5-0") && (id != "6-0")) {
+        if (shiny == false) {
+            $("#pkm" + i + "_img").attr("src", "/assets/pokemon/" + code + ".gif");
+        }
+        else {
+            $("#pkm" + i + "_img").attr("src", "/assets/shinyPokemon/" + code + ".gif");
+        }
+
+        $("#pkm" + i + "_description").val("Name: " + name + "   Specie: " + specie + "\nItem: " + item + "    Ability: " + ability
+                + "\nMove 1: " + move1 + "  Move 2: " + move2 + "  Move 3: " + move3 + "  Move 4: " + move4);
     }
-    else{
-        $("#pkm"+i+"_img").attr("src","/assets/shinyPokemon/"+code+".gif");
-    }
 
-    $("#pkm"+i+"_description").val("Name: "+name+"   Specie: "+specie+"\nItem: "+item+"    Ability: "+ability
-    +"\nMove 1: "+move1+"  Move 2: "+move2+"  Move 3: "+move3+"  Move 4: "+move4);
-
-}
+};
