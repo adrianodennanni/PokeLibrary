@@ -21,7 +21,7 @@ class PokemonsController < ApplicationController
     vacancy = false
     catch (:done) do
       (1..4).each do |i|
-        (1..30).each do |j|
+        (1..current_user.boxes.find_by(number: i).size).each do |j|
           if not current_user.pokemons.where(box: i).exists?(box_position: j)
             vacancy = true
             @pokemon.box_id = i

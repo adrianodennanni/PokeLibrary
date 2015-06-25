@@ -10,7 +10,7 @@ class PartiesController < ApplicationController
   def create
     @party = Party.new(party_params)
     @party.user_id=current_user.id
-    @party.save
+    @party.save if current_user.parties.count<20
     redirect_to root_path
   end
 
